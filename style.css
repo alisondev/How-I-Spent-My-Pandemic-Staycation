@@ -1,0 +1,175 @@
+.wrapper {
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+.header {
+    background-image: linear-gradient( deepskyblue, skyblue);
+    padding: 5px 20px 5px 5px;
+}
+
+ul.navbar {
+	display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem
+}
+
+.logo {
+    width: 15vh;
+}
+
+.item-1 {
+  margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+p {
+    padding: 0.5rem;
+}
+
+#strike {
+    text-decoration: line-through;
+    line-height: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.poststrike {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+img {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+div.photos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid black;
+    max-width: 90%;
+    margin: 0 auto 5%;
+    padding: 0;
+}
+
+div.list {
+    box-sizing: border-box;
+    border: 2px solid black;
+    max-width: 80%;
+    margin: auto;
+}
+
+ul.instructions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#todo{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 10px;
+}
+
+.attribution {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1000px){
+        ul.navbar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    
+        div.photos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 2px solid black;
+            max-width: 80%;
+        }
+    
+        img {
+            width: 45%;
+            height: auto;
+            padding: 5px;
+        }
+}
+@media screen and (min-width: 1200px){
+    ul.navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    div.photos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-grow: 1;
+        border: 2px solid black;
+        max-width: 80%;
+    }
+
+    img {
+        width: 48%;
+        height: auto;
+        padding: 5px;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    button{
+        font-size: 1.1rem;
+    }
+
+    .attribution {
+        font-size: 1.1rem;
+    }
+}
