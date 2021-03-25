@@ -7,24 +7,48 @@
     <title>How I Spent My Pandemic Staycation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
-        <div class="header" id="nav">
-            <ul class="navbar">
-                <li><img class="logo" src="images/mask.png" alt="facemask"></li>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#working">Working</a></li>
-                <li><a href="#cooking">Cooking</a></li>
-                <li><a href="#hiking">Hiking</a></li>
-                <li><a href="#gardening">Gardening</a></li>
-                <li><a href="#pc">PC Building</a></li>
-                <li><a href="#js">JavaScript</a></li>
-            </ul>
+        <header>
+            <div class="hero-image">
+                <nav id="navbar" class="nonoverlay">
+                        <ul class="horizontal-nav">
+                            <li><img class="mask" src="images/mask.png" alt="facemask"></li>
+                            <li><a class="navlink" href="#intro">Intro</a></li>
+                            <li><a class="navlink" href="#working">Working</a></li>
+                            <li><a class="navlink" href="#cooking">Cooking</a></li>
+                            <li><a class="navlink" href="#hiking">Hiking</a></li>
+                            <li><a class="navlink" href="#gardening">Gardening</a></li>
+                            <li><a class="navlink" href="#pc">PC Building</a></li>
+                            <li><a class="navlink" href="#js">JavaScript</a></li>          
+                        </ul>
+                    </nav>
+    
+
+                <img id="menuicon" src="images/menu.png" alt="menu button" onclick="openNav()">
+                <nav id="overlaynavbar" class="overlay">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                    <ul class="overlaycontent">
+                        <li><a class="navlink" href="#intro">Intro</a></li>
+                        <li><a class="navlink" href="#working">Working</a></li>
+                        <li><a class="navlink" href="#cooking">Cooking</a></li>
+                        <li><a class="navlink" href="#hiking">Hiking</a></li>
+                        <li><a class="navlink" href="#gardening">Gardening</a></li>
+                        <li><a class="navlink" href="#pc">PC Building</a></li>
+                        <li><a class="navlink" href="#js">JavaScript</a></li>          
+                    </ul>
+                </nav>
+        <div class="hero-text">
+            <h1>How I Spent My Pandemic Staycation</h1>
+            <p>One Year of Lockdown: A Time Capsule</p>
         </div>
-        <div class="content">
-            <h1 id="intro">How I Spent My Pandemic Staycation</h1>
+    </header>
+
+        <main>
+            <h2 id="intro">Introduction</h2>
             <p>I love traveling and have done almost none of it this year. Here's a time capsule of other hobbies I took up in 2020-21.</p>
             <h2 id="working">Working from Home</h2>
             <p>(Let's pretend this counts as a hobby.) My canine coworker decides when it's break time.</p>
@@ -57,7 +81,6 @@
             <div class="photos">
                 <img src="images/plant.jpg" alt="plant">
                 <img src="images/basil.jpg" alt="basil">
-
             </div>
             <h2 id="photos">Organizing Photos</h2>
             <p>This was my last real vacation: a long weekend in New Orleans back in January 2020. Beign-YAYS!</p>
@@ -76,36 +99,45 @@
                 <img src="images/gpu.jpg" alt="GPU">
             </div>
             <h2 id="js">Learning JavaScript</h2>
-            <p>Harder than it looks.</p>
-            <p>Here's a to do list I made after hours spent on Google/YouTube, looking for something even simpler than "beginner."</p>
-            <div class="list" id="list">
-            <h3>To Do List</h3>
-            <p>Instructions:</p>
-            <ul class="instructions">
-                <li>Type a task in the box.</li>
-                <li>Click the + button to add the task to the list.</li>
-                <li>Click any task to mark it complete.</li>
-                <li>Double click any task to delete it.</li>
-            </ul>
+            <p>Harder than it looks. Here's a to do list I made after hours spent on Google/YouTube, looking for something even simpler than "beginner."</p>
             <br>
-        <div class="container">
-            <input type="text" id="input">
-            <button id="add">+</button>
-        </div>    
-        <div class="todocontainer" id="todo">
-        </div>
-        </div>  
-        <br>  
-        <button onclick="showHide()">show/hide list</button>
-    </div>
-    <br>    
-    <div class="footer">
-        <a href="#top">Back to top</a>
-        <br>
-        <div class="attribution">Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com</a></div>
-    </div>
+            <div class="list" id="list">
+                <h3>To Do List</h3>
+                <p>Instructions:</p>
+                <ul class="instructions">
+                    <li>Type a task in the box.</li>
+                    <li>Click/tap the + button to add the task to the list.</li>
+                    <li>Click/tap any task to mark it complete.</li>
+                    <li>Double click/tap any task to delete it.</li>
+                </ul>
+                <br>
+                <div class="container">
+                    <input type="text" id="input">
+                    <button id="add">+</button>
+                </div>    
+                <div class="todocontainer" id="todo">
+                </div>
+            </div>  
 
-        <script src="todo.js"></script>
+            <br>  
+            <button onclick="showHide()">show/hide list</button>
+            <br>
+            <br>
+            <script src="todo.js"></script>
+
+        <script src="nav.js"></script>
+
+        </main>
+
+        <footer>
+            <a href="#top">Back to top</a>
+            <br>
+            <div class="attribution">Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> and <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup">Pixelmeetup</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com</a>
+            </div>
+            <br>
+
+        </footer>
+
     </div>
 </body>
 </html>
