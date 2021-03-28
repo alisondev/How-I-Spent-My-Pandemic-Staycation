@@ -156,6 +156,10 @@ p {
     color: white;
   }
 
+  hr {
+      width: 90%;
+  }
+
 
 /* media queries */
 
