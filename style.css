@@ -70,7 +70,7 @@ h2 {
 }
 
 p {
-    max-width: 1000px;
+    max-width: 90%;
     margin: auto;
     padding-bottom: 20px;
 }
@@ -174,7 +174,7 @@ p {
     }
   }
 
-/* two-column photos for larger screens */
+/* two-column photos and paragraph formatting for larger screens */
 @media screen and (min-width: 1000px) {
 div.photos {
     display: flex;
@@ -188,6 +188,12 @@ img {
     width: 49%;
     height: auto;
     padding: 4px;
+}
+
+p {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 20px;
 }
 }
 
